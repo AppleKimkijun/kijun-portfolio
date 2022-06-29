@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'SaintMonicaRegular';
+  src: url('SaintMonicaRegular.eot');
+  src: url('SaintMonicaRegular.eot?#iefix') format('embedded-opentype'),
+       url('SaintMonicaRegular.svg#SaintMonicaRegular') format('svg'),
+       url('SaintMonicaRegular.ttf') format('truetype'),
+       url('SaintMonicaRegular.woff') format('woff'),
+       url('SaintMonicaRegular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
