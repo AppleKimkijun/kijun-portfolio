@@ -1,12 +1,11 @@
 @font-face {
-  font-family: 'GrandSlang-Italic';
-  src: url('GrandSlang-Italic.eot');
-  src: url('GrandSlang-Italic.eot?#iefix') format('embedded-opentype'),
-       url('GrandSlang-Italic.svg#GrandSlang-Italic') format('svg'),
-       url('GrandSlang-Italic.ttf') format('truetype'),
-       url('GrandSlang-Italic.woff') format('woff'),
-       url('GrandSlang-Italic.woff2') format('woff2');
+  font-family: "GrandSlang-Italic";
+  src: url("GrandSlang-Italic.eot");
+  src: url("GrandSlang-Italic.eot?#iefix") format("embedded-opentype"),
+    url("GrandSlang-Italic.svg#GrandSlang-Italic") format("svg"),
+    url("GrandSlang-Italic.ttf") format("truetype"),
+    url("GrandSlang-Italic.woff") format("woff"),
+    url("GrandSlang-Italic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-

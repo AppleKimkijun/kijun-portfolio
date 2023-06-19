@@ -1,12 +1,11 @@
 @font-face {
-  font-family: 'SaintMonicaItalic';
-  src: url('SaintMonicaItalic.eot');
-  src: url('SaintMonicaItalic.eot?#iefix') format('embedded-opentype'),
-       url('SaintMonicaItalic.svg#SaintMonicaItalic') format('svg'),
-       url('SaintMonicaItalic.ttf') format('truetype'),
-       url('SaintMonicaItalic.woff') format('woff'),
-       url('SaintMonicaItalic.woff2') format('woff2');
+  font-family: "SaintMonicaItalic";
+  src: url("SaintMonicaItalic.eot");
+  src: url("SaintMonicaItalic.eot?#iefix") format("embedded-opentype"),
+    url("SaintMonicaItalic.svg#SaintMonicaItalic") format("svg"),
+    url("SaintMonicaItalic.ttf") format("truetype"),
+    url("SaintMonicaItalic.woff") format("woff"),
+    url("SaintMonicaItalic.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-

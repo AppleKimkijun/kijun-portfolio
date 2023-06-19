@@ -1,12 +1,11 @@
 @font-face {
-  font-family: 'Migra-Extrabold';
-  src: url('Migra-Extrabold.eot');
-  src: url('Migra-Extrabold.eot?#iefix') format('embedded-opentype'),
-       url('Migra-Extrabold.svg#Migra-Extrabold') format('svg'),
-       url('Migra-Extrabold.ttf') format('truetype'),
-       url('Migra-Extrabold.woff') format('woff'),
-       url('Migra-Extrabold.woff2') format('woff2');
+  font-family: "Migra-Extrabold";
+  src: url("Migra-Extrabold.eot");
+  src: url("Migra-Extrabold.eot?#iefix") format("embedded-opentype"),
+    url("Migra-Extrabold.svg#Migra-Extrabold") format("svg"),
+    url("Migra-Extrabold.ttf") format("truetype"),
+    url("Migra-Extrabold.woff") format("woff"),
+    url("Migra-Extrabold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
-

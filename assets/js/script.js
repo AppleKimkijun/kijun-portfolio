@@ -5,26 +5,26 @@ const pageContainer = document.querySelector(".trans");
 /* SMOOTH SCROLL */
 const scroller = new LocomotiveScroll({
   el: pageContainer,
-  smooth: true
+  smooth: true,
 });
 
 scroller.on("scroll", ScrollTrigger.update);
 
 ScrollTrigger.scrollerProxy(pageContainer, {
   scrollTop(value) {
-    return arguments.length ?
-      scroller.scrollTo(value, 0, 0) :
-      scroller.scroll.instance.scroll.y;
+    return arguments.length
+      ? scroller.scrollTo(value, 0, 0)
+      : scroller.scroll.instance.scroll.y;
   },
   getBoundingClientRect() {
     return {
       left: 0,
       top: 0,
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     };
   },
-  pinType: pageContainer.style.transform ? "transform" : "fixed"
+  pinType: pageContainer.style.transform ? "transform" : "fixed",
 });
 
 ////////////////////////////////////
@@ -44,10 +44,10 @@ window.addEventListener("load", function () {
       pin: true,
       anticipatePin: 1,
       start: "top top",
-      end: `+=${scriptWrapWidth}`
+      end: `+=${scriptWrapWidth}`,
     },
     x: -horizontalScrollLength,
-    ease: "linear"
+    ease: "linear",
   });
 
   ScrollTrigger.addEventListener("refresh", () => scroller.update()); //locomotive-scroll
@@ -55,29 +55,15 @@ window.addEventListener("load", function () {
 });
 // E: scroll smooth & width scroll
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // 메인 타이틀 애니메이션-------------------------------------------------------
 const titleTop = document.querySelector(".title_top1");
-let titleSp = titleTop.innerHTML.split('');
+let titleSp = titleTop.innerHTML.split("");
 
 function title() {
   for (let i = 0; i < titleSp.length; i++) {
-    let span = `<span class = sub_t${i+1} style = "top:100">${titleSp[i]}</span>`;
+    let span = `<span class = sub_t${i + 1} style = "top:100">${
+      titleSp[i]
+    }</span>`;
     titleSp[i] = span;
   }
 }
@@ -89,18 +75,18 @@ function main() {
     gsap.set(".sub_t" + i, {
       y: -100,
       opacity: 0,
-    })
+    });
   }
 }
 main();
 
 // 메인 효과주기2-------------------------------------------------------
 const titleTop2 = document.querySelector(".title_top2");
-let titleSp2 = titleTop2.innerHTML.split('');
+let titleSp2 = titleTop2.innerHTML.split("");
 
 function title2() {
   for (let i = 0; i < titleSp2.length; i++) {
-    let span2 = `<span class = sub_b${i+1}>${titleSp2[i]}</span>`;
+    let span2 = `<span class = sub_b${i + 1}>${titleSp2[i]}</span>`;
     titleSp2[i] = span2;
   }
 }
@@ -113,18 +99,17 @@ function main2() {
   for (let i = 1; i <= titleSp2.length; i++) {
     gsap.set(".sub_b" + i, {
       opacity: 0,
-    })
+    });
   }
 }
 main2();
-
 
 // 클래스에 gsap 셋팅 -------------------------------------------------------------------------------------------
 gsap.set("#webgl-canvas", {
   scale: 0,
 });
 gsap.set("#container1", {
-  opacity: 0
+  opacity: 0,
 });
 gsap.set("#header ", {
   opacity: 0,
@@ -135,7 +120,6 @@ gsap.set(".title_bottom ", {
   bottom: -100,
 });
 
-
 setTimeout(() => {
   gsap.to("#webgl-canvas", {
     duration: 0.5,
@@ -145,7 +129,7 @@ setTimeout(() => {
   gsap.to("#container1", {
     duration: 5,
     delay: 0.7,
-    opacity: .3
+    opacity: 0.3,
   });
   gsap.to(".title_bottom ", {
     duration: 1,
@@ -162,132 +146,111 @@ setTimeout(() => {
     delay: 2.5,
   });
 
-
-
-
-
-
-
   gsap.to(".sub_t1", {
     delay: 1,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_t2", {
     delay: 1.05,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_t3", {
     delay: 1.1,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_t4", {
     delay: 1.15,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_t5", {
     delay: 1.2,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_t6", {
     delay: 1.25,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_t7", {
     delay: 1.3,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_t8", {
     delay: 1.35,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   // sub_t
   gsap.to(".sub_b1", {
     delay: 1.9,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b2", {
     delay: 1.85,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b3", {
     delay: 1.8,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b4", {
     delay: 1.75,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b5", {
     delay: 1.7,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b6", {
     delay: 1.65,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b7", {
     delay: 1.6,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b8", {
     delay: 1.55,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
+  });
   gsap.to(".sub_b9", {
     delay: 1.5,
     duration: 2,
     opacity: 1,
     ease: "linear",
-  })
-
+  });
 }, 2000);
 //  메인 효과-----------------------------------------------------------------------------------------------------------
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* arrow 효과 ==============================================================================================*/
 gsap.set(".arrow", {
@@ -311,23 +274,20 @@ gsap.to(".arrow", {
 gsap.set(".profile_img_wrap", {
   opacity: 0,
   x: -50,
-})
+});
 gsap.set(".text1", {
   opacity: 0,
   y: 50,
-})
+});
 gsap.set(".text2", {
   opacity: 0,
   y: 50,
-})
+});
 gsap.set(".scroll_down", {
   opacity: 0,
   y: 50,
   rotate: "-360deg",
-})
-
-
-
+});
 
 let g1 = gsap.timeline({
   scrollTrigger: {
@@ -335,9 +295,7 @@ let g1 = gsap.timeline({
     scroller: pageContainer,
     start: "top 60%",
   },
-})
-
-
+});
 
 gsap.to(".profile_img_wrap", {
   scrollTrigger: {
@@ -348,31 +306,28 @@ gsap.to(".profile_img_wrap", {
   duration: 1.5,
   opacity: 1,
   x: 0,
-  ease: "ease"
-})
+  ease: "ease",
+});
 g1.to(".text1", {
-  duration: .3,
+  duration: 0.3,
   opacity: 1,
   y: 0,
-  ease: "ease"
-})
+  ease: "ease",
+});
 g1.to(".text2", {
-  duration: .5,
+  duration: 0.5,
 
   opacity: 1,
   y: 0,
-  ease: "ease"
-})
+  ease: "ease",
+});
 g1.to(".scroll_down", {
-  duration: .5,
+  duration: 0.5,
 
   opacity: 1,
   y: 0,
-  ease: "ease"
-})
-
-
-
+  ease: "ease",
+});
 
 gsap.to(".scroll_down", {
   rotate: "360deg",
@@ -382,316 +337,265 @@ gsap.to(".scroll_down", {
     trigger: ".img_wrap",
     scrub: 1,
   },
-})
+});
 // profile 효과 ==============================================================================================
 
-
-
-
 // web 효과 ==============================================================================================
 
-  gsap.set(".web_l_img .web_img_wrap img",{
-    y:100,
-    opacity:0
-  })
-  gsap.set(".web_r_img .web_img_wrap img",{
-    y:100,
-    opacity:0
-  })
- 
+gsap.set(".web_l_img .web_img_wrap img", {
+  y: 100,
+  opacity: 0,
+});
+gsap.set(".web_r_img .web_img_wrap img", {
+  y: 100,
+  opacity: 0,
+});
 
+gsap.to(".web_l_1 .web_img_wrap img", {
+  scrollTrigger: {
+    trigger: ".web_l_1",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+  duration: 0.3,
+  ease: "none",
+  y: 0,
+  opacity: 1,
+});
+let w1 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".web_l_1",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+});
 
+w1.to(".web_l_1 .web_t_r", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+  delay: 0.6,
+});
+w1.to(".web_l_1 .web_title", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+w1.to(".web_l_1 .web_img_b", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
 
-  
-  gsap.to(".web_l_1 .web_img_wrap img",{
-    scrollTrigger:{
-      trigger:".web_l_1",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-    duration:.3,
-    ease:"none",
-    y:0,
-    opacity:1
-  })
-  let w1 = gsap.timeline({
-    scrollTrigger:{
-      trigger:".web_l_1",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-  })
+/* .web_l_1 ======================================= */
 
-  w1.to(".web_l_1 .web_t_r",{
-    transform:"rotateX(0deg)",
-    duration:.5,
-    delay:.6
-  })
-  w1.to(".web_l_1 .web_title",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  w1.to(".web_l_1 .web_img_b",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
+gsap.to(".web_r_1 .web_img_wrap img", {
+  scrollTrigger: {
+    trigger: ".web_r_1",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+  duration: 0.5,
+  ease: "none",
+  y: 0,
+  opacity: 1,
+});
 
+let w2 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".web_r_1",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+});
 
+w2.to(".web_r_1 .web_t_r", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+  delay: 0.6,
+});
+w2.to(".web_r_1 .web_title", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+w2.to(".web_r_1 .web_img_b", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+/* .web_r_1 ======================================= */
 
+gsap.to(".web_l_2 .web_img_wrap img", {
+  scrollTrigger: {
+    trigger: ".web_l_2",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+  duration: 0.5,
+  ease: "none",
+  y: 0,
+  opacity: 1,
+});
 
-  /* .web_l_1 ======================================= */
+let w3 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".web_l_2",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+});
 
+w3.to(".web_l_2 .web_t_r", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+  delay: 0.6,
+});
+w3.to(".web_l_2 .web_title", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+w3.to(".web_l_2 .web_img_b", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+/* .web_l_2 ======================================= */
 
+gsap.to(".web_r_2 .web_img_wrap img", {
+  scrollTrigger: {
+    trigger: ".web_r_2",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+  duration: 0.5,
+  ease: "none",
+  y: 0,
+  opacity: 1,
+});
 
-  gsap.to(".web_r_1 .web_img_wrap img",{
-    scrollTrigger:{
-      trigger:".web_r_1",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-    duration:.5,
-    ease:"none",
-    y:0,
-    opacity:1
-  })
+let w4 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".web_r_2",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+});
 
-  let w2 = gsap.timeline({
-    scrollTrigger:{
-      trigger:".web_r_1",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-  })
+w4.to(".web_r_2 .web_t_r", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+  delay: 0.6,
+});
+w4.to(".web_r_2 .web_title", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+w4.to(".web_r_2 .web_img_b", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+/* .web_r_2 ======================================= */
 
-  w2.to(".web_r_1 .web_t_r",{
-    transform:"rotateX(0deg)",
-    duration:.5,
-    delay:.6
-  })
-  w2.to(".web_r_1 .web_title",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  w2.to(".web_r_1 .web_img_b",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  /* .web_r_1 ======================================= */
+gsap.to(".web_l_3 .web_img_wrap img", {
+  scrollTrigger: {
+    trigger: ".web_l_3",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+  duration: 0.5,
+  ease: "none",
+  y: 0,
+  opacity: 1,
+});
 
+let w5 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".web_l_3",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+});
 
+w5.to(".web_l_3 .web_t_r", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+  delay: 0.6,
+});
+w5.to(".web_l_3 .web_title", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+w5.to(".web_l_3 .web_img_b", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+/* .web_l_3 ======================================= */
 
-  gsap.to(".web_l_2 .web_img_wrap img",{
-    scrollTrigger:{
-      trigger:".web_l_2",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-    duration:.5,
-    ease:"none",
-    y:0,
-    opacity:1
-  })
+gsap.to(".web_r_3 .web_img_wrap img", {
+  scrollTrigger: {
+    trigger: ".web_r_3",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+  duration: 0.5,
+  ease: "none",
+  y: 0,
+  opacity: 1,
+});
 
-  let w3 = gsap.timeline({
-    scrollTrigger:{
-      trigger:".web_l_2",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-  })
+let w6 = gsap.timeline({
+  scrollTrigger: {
+    trigger: ".web_r_3",
+    scroller: pageContainer,
+    start: "top 45%",
+  },
+});
 
-  w3.to(".web_l_2 .web_t_r",{
-    transform:"rotateX(0deg)",
-    duration:.5,
-    delay:.6
-  })
-  w3.to(".web_l_2 .web_title",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  w3.to(".web_l_2 .web_img_b",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  /* .web_l_2 ======================================= */
-
-
-  gsap.to(".web_r_2 .web_img_wrap img",{
-    scrollTrigger:{
-      trigger:".web_r_2",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-    duration:.5,
-    ease:"none",
-    y:0,
-    opacity:1
-  })
-
-
-  let w4 = gsap.timeline({
-    scrollTrigger:{
-      trigger:".web_r_2",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-  })
-
-  w4.to(".web_r_2 .web_t_r",{
-    transform:"rotateX(0deg)",
-    duration:.5,
-    delay:.6
-  })
-  w4.to(".web_r_2 .web_title",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  w4.to(".web_r_2 .web_img_b",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  /* .web_r_2 ======================================= */
-
-
-
-  gsap.to(".web_l_3 .web_img_wrap img",{
-    scrollTrigger:{
-      trigger:".web_l_3",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-    duration:.5,
-    ease:"none",
-    y:0,
-    opacity:1
-  })
-
-  let w5 = gsap.timeline({
-    scrollTrigger:{
-      trigger:".web_l_3",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-  })
-
-  w5.to(".web_l_3 .web_t_r",{
-    transform:"rotateX(0deg)",
-    duration:.5,
-    delay:.6
-  })
-  w5.to(".web_l_3 .web_title",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  w5.to(".web_l_3 .web_img_b",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  /* .web_l_3 ======================================= */
-
-
-  gsap.to(".web_r_3 .web_img_wrap img",{
-    scrollTrigger:{
-      trigger:".web_r_3",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-    duration:.5,
-    ease:"none",
-    y:0,
-    opacity:1
-  })
-
-
-  let w6 = gsap.timeline({
-    scrollTrigger:{
-      trigger:".web_r_3",
-      scroller: pageContainer,
-      start:"top 45%"
-    },
-  })
-
-  w6.to(".web_r_3 .web_t_r",{
-    transform:"rotateX(0deg)",
-    duration:.5,
-    delay:.6
-  })
-  w6.to(".web_r_3 .web_title",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  w6.to(".web_r_3 .web_img_b",{
-    transform:"rotateX(0deg)",
-    duration:.5
-  })
-  /* .web_r_2 ======================================= */
- 
-
-
-
-
+w6.to(".web_r_3 .web_t_r", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+  delay: 0.6,
+});
+w6.to(".web_r_3 .web_title", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+w6.to(".web_r_3 .web_img_b", {
+  transform: "rotateX(0deg)",
+  duration: 0.5,
+});
+/* .web_r_2 ======================================= */
 
 // web 효과 ==============================================================================================
-
-
-
-
-
-
-
 
 // 애니메이션 마우스따라다니는 효과 ==============================================================================================
 const cursor = document.querySelector(".move_img_wrap");
 
 const circle = cursor.getBoundingClientRect();
 
-
-
 function follow(e) {
   gsap.to(".move_img_wrap", {
-    duration: .15,
+    duration: 0.15,
     x: e.pageX - circle.width + 100,
     y: e.pageY - circle.height - pageContainer.offsetTop,
   });
-
 }
 
 document.addEventListener("mousemove", follow);
 // 애니메이션 마우스따라다니는 효과 ==============================================================================================
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* S:메인 배경 효과 ========================*/
 class Stage {
   constructor() {
     this.renderParam = {
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     };
 
     this.cameraParam = {
       fov: 70,
-      lookAt: new THREE.Vector3(0, 0, 0)
+      lookAt: new THREE.Vector3(0, 0, 0),
     };
 
     this.fogParam = {
       color: 0x000000,
       start: 50,
-      end: 2000
+      end: 2000,
     };
 
     this.scene = null;
@@ -719,7 +623,7 @@ class Stage {
   _setRender() {
     this.renderer = new THREE.WebGLRenderer({
       canvas: document.getElementById("webgl-canvas"),
-      alpha: true
+      alpha: true,
     });
     this.renderer.setPixelRatio(window.devicePixelRatio);
     this.renderer.setSize(this.renderParam.width, this.renderParam.height);
@@ -787,7 +691,7 @@ class Mesh {
     const LENGTH = 3000;
     const geometry = new THREE.BufferGeometry();
     const material = new THREE.PointsMaterial({
-      color: 0xffffff
+      color: 0xffffff,
     });
 
     for (let i = 0; i < LENGTH; i++) {
@@ -840,30 +744,28 @@ class Mesh {
 })();
 /* E: 메인 배경효과 */
 
-
 /* S: 메인 리본 효과 */
-let scene, camera, renderer, ribbon
+let scene, camera, renderer, ribbon;
 
-const container = document.querySelector('#container1')
+const container = document.querySelector("#container1");
 
 const init = () => {
-
-  scene = new THREE.Scene()
-  camera = new THREE.PerspectiveCamera(75, 1, 0.1, 10000)
-  camera.position.z = 2
+  scene = new THREE.Scene();
+  camera = new THREE.PerspectiveCamera(75, 1, 0.1, 10000);
+  camera.position.z = 2;
 
   renderer = new THREE.WebGLRenderer({
     antialias: true,
-    alpha: true
-  })
-  container.appendChild(renderer.domElement)
+    alpha: true,
+  });
+  container.appendChild(renderer.domElement);
 
   ribbon = new THREE.Mesh(
     new THREE.PlaneGeometry(1, 1, 128, 128),
     new THREE.ShaderMaterial({
       uniforms: {
         time: {
-          value: 1.0
+          value: 1.0,
         },
       },
       vertexShader: `
@@ -929,58 +831,45 @@ const init = () => {
         derivatives: true,
         fragDepth: false,
         drawBuffers: false,
-        shaderTextureLOD: false
+        shaderTextureLOD: false,
       },
       side: THREE.DoubleSide,
       transparent: true,
       depthTest: false,
     })
-  )
+  );
 
-  scene.add(ribbon)
+  scene.add(ribbon);
 
-  resize()
-  window.addEventListener('resize', resize)
-
-}
-
+  resize();
+  window.addEventListener("resize", resize);
+};
 
 const resize = () => {
+  const { offsetWidth, offsetHeight } = container;
 
-  const {
-    offsetWidth,
-    offsetHeight
-  } = container
+  renderer.setSize(offsetWidth, offsetHeight);
+  renderer.setPixelRatio(devicePixelRatio);
 
-  renderer.setSize(offsetWidth, offsetHeight)
-  renderer.setPixelRatio(devicePixelRatio)
+  camera.aspect = offsetWidth / offsetHeight;
+  camera.updateProjectionMatrix();
 
-  camera.aspect = offsetWidth / offsetHeight
-  camera.updateProjectionMatrix()
-
-  ribbon.scale.set(camera.aspect * 1.55, 0.75, 1)
-
-}
+  ribbon.scale.set(camera.aspect * 1.55, 0.75, 1);
+};
 
 const animate = () => {
+  ribbon.material.uniforms.time.value += 0.01;
 
-  ribbon.material.uniforms.time.value += 0.01
+  renderer.render(scene, camera);
+  requestAnimationFrame(() => animate());
+};
 
-  renderer.render(scene, camera)
-  requestAnimationFrame(() => animate())
-
-}
-
-init()
-animate()
+init();
+animate();
 // E:메인 리본 효과 =============================================================================================================
 // E:메인 리본 효과 =============================================================================================================
 // E:메인 리본 효과 =============================================================================================================
 
-
-
-
-
-$("#wait").click(()=>{
-  alert("죄송합니다 현재 제작중입니다.")
-})
+$("#wait").click(() => {
+  alert("죄송합니다 현재 제작중입니다.");
+});

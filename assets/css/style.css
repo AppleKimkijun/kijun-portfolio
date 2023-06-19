@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: "GrandSlang-Italic";
   src: url("../fonts/grandslang-italic/GrandSlang-Italic.eot");
@@ -13,7 +12,8 @@
 
 @font-face {
   font-family: "Chosunilbo_myungjo";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff") format("woff");
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -53,15 +53,14 @@
 /* 세인트모니카 */
 
 @font-face {
-  font-family: 'OPTICuento';
-  src: url('../fonts/optic/OPTICuento.ttf.woff') format('woff'),
-    url('../fonts/optic/OPTICuento.ttf.svg') format('svg'),
-    url('../fonts/optic/OPTICuento.ttf.woff');
+  font-family: "OPTICuento";
+  src: url("../fonts/optic/OPTICuento.ttf.woff") format("woff"),
+    url("../fonts/optic/OPTICuento.ttf.svg") format("svg"),
+    url("../fonts/optic/OPTICuento.ttf.woff");
   font-weight: normal;
   font-style: normal;
 }
 /* 애니메이션 영역 폰트 */
-
 
 /* 폰트 끝 ================================================================================================================= */
 /* 폰트 끝 ================================================================================================================= */
@@ -78,7 +77,6 @@
   box-sizing: border-box;
 }
 
-
 img {
   vertical-align: middle;
 }
@@ -90,15 +88,13 @@ body {
   overflow-x: hidden;
 }
 
-a{
- color: var(--main-color); 
+a {
+  color: var(--main-color);
 }
 
-
 /* 기본셋팅 ---------------- 기본셋팅 ---------------------- */
 /* 기본셋팅 ---------------- 기본셋팅 ---------------------- */
 /* 기본셋팅 ---------------- 기본셋팅 ---------------------- */
-
 
 #header {
   width: 100%;
@@ -133,15 +129,12 @@ a{
   align-content: space-between;
 }
 
-
-
 #header #nav {
   width: 30px;
   height: 30px;
   display: flex;
   align-items: center;
 }
-
 
 #header #nav .nav {
   width: 100%;
@@ -162,11 +155,6 @@ a{
 
 /* //header ==========================================================================================*/
 
-
-
-
-
-
 /* ///메인 섹션들 세로 정렬, 메인 3d -------------------------------------------------------------------------------*/
 /* ///메인 섹션들 세로 정렬, 메인 3d -------------------------------------------------------------------------------*/
 /* ///메인 섹션들 세로 정렬, 메인 3d -------------------------------------------------------------------------------*/
@@ -183,7 +171,6 @@ a{
   flex-direction: column;
   position: relative;
 }
-
 
 .body_container #webgl-canvas {
   position: absolute;
@@ -282,7 +269,6 @@ a{
   margin-left: 10vw;
   overflow: hidden;
   position: relative;
-
 }
 
 .profile_img {
@@ -292,7 +278,6 @@ a{
   left: 50%;
   transform: translateX(-50%);
 }
-
 
 .profile_text_wrap {
   margin-bottom: -20vh;
@@ -319,7 +304,6 @@ a{
   width: 35vw;
   align-self: center;
   margin-bottom: 15vh;
-
 }
 
 .scroll_down {
@@ -331,7 +315,7 @@ a{
   margin-right: -15vw;
 }
 
-.scroll_down>div {
+.scroll_down > div {
   width: 10vw;
   height: 5vw;
   position: absolute;
@@ -357,7 +341,6 @@ a{
   display: flex;
   flex-direction: column;
 }
-
 
 .web_site h2 {
   font-family: "GrandSlang-Italic";
@@ -406,22 +389,22 @@ a{
 
 .web_l_img {
   margin-bottom: 20vh;
-  transition: .5s;
+  transition: 0.5s;
 }
-.web_l_img:hover{
+.web_l_img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
 .web_r_img {
   margin-bottom: 20vh;
-    transition: .5s;
+  transition: 0.5s;
 }
-.web_r_img:hover{
+.web_r_img:hover {
   transform: scale(1.05);
   cursor: pointer;
 }
 
-.web_img_wrap{
+.web_img_wrap {
   width: 100%;
   height: 50vh;
   overflow: hidden;
@@ -447,7 +430,6 @@ a{
   line-height: 1;
   text-transform: uppercase;
   transform: rotateX(90deg);
-
 }
 
 .web_ex {
@@ -476,13 +458,6 @@ a{
   align-items: center;
 }
 
-
-
-
-
-
-
-
 /* web_site ======================================================================================= */
 
 #section_script {
@@ -506,7 +481,8 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw; height: 100vh;
+  width: 100vw;
+  height: 100vh;
   text-transform: capitalize;
   font-family: "SaintMonicaRegular";
 }
@@ -536,7 +512,7 @@ a{
   height: 100%;
   object-fit: cover;
 }
-.script_r{
+.script_r {
   padding-top: 15vh;
   margin-left: 80px;
   width: 40vw;
@@ -552,7 +528,7 @@ a{
   margin-bottom: 1vw;
 }
 
-.script_title{
+.script_title {
   font-size: 6vw;
   line-height: 1;
   margin-bottom: 2.5vw;
@@ -580,58 +556,6 @@ a{
   margin-right: 30px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .animation_field h2 {
   margin-top: 20vh;
   font-family: "GrandSlang-Italic";
@@ -647,9 +571,6 @@ a{
   text-transform: capitalize;
 }
 
-
-
-
 .animation_wrap {
   display: flex;
   align-items: flex-end;
@@ -663,7 +584,6 @@ a{
   margin-bottom: 0;
 }
 
-
 .ani_num {
   font-size: 1.2vw;
   font-family: "FoundersGrotesk-Light";
@@ -673,7 +593,7 @@ a{
 .animation {
   display: flex;
   text-transform: uppercase;
-  font-family: 'OPTICuento';
+  font-family: "OPTICuento";
   width: 60vw;
   margin-bottom: -1vh;
   position: relative;
@@ -688,7 +608,6 @@ a{
   pointer-events: none;
   top: -35%;
   left: 5%;
-  
 }
 
 .watch-face {
@@ -698,7 +617,6 @@ a{
   position: absolute;
   top: 40%;
   left: 38%;
-
 }
 
 .circle {
@@ -744,7 +662,7 @@ a{
 
 @keyframes pulse {
   0% {
-    transform: scale(.15) rotate(180deg);
+    transform: scale(0.15) rotate(180deg);
   }
 
   100% {
@@ -855,7 +773,6 @@ a{
   top: 0;
   left: 50%;
   color: #fff;
-
 }
 
 .cube div:nth-child(1) {
@@ -1059,11 +976,9 @@ figure {
   }
 }
 
-
 /* 큐브 애니메이션 2222222222222222 ------------------------------------------------*/
 /* 큐브 애니메이션 2222222222222222 ------------------------------------------------*/
 /* 큐브 애니메이션 2222222222222222 ------------------------------------------------*/
-
 
 @keyframes rotate {
   0% {
@@ -1168,140 +1083,122 @@ div.side:nth-child(6) {
 }
 
 .animation:hover .move_img_wrap {
-  transition: .2s;
+  transition: 0.2s;
   opacity: 1;
 }
 
 .animation:not(:hover) .move_img_wrap {
-  transition: .2s;
+  transition: 0.2s;
   opacity: 0;
 }
 
-
-
 .animation:hover .animation1 {
   transform: rotateX(90deg);
-  transition: .7s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.7s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation1 {
   transform: rotateX(0deg);
   transition: 1.3s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
-
 
 .animation:hover .animation2 {
   transform: rotateX(90deg);
-  transition: .8s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.8s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation2 {
   transform: rotateX(0deg);
   transition: 1.2s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
-
-
 
 .animation:hover .animation3 {
   transform: rotateX(90deg);
-  transition: .9s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.9s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation3 {
   transform: rotateX(0deg);
   transition: 1.1s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
-
-
-
 
 .animation:hover .animation4 {
   transform: rotateX(90deg);
   transition: 1s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation4 {
   transform: rotateX(0deg);
   transition: 1s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
-
-
 
 .animation:hover .animation5 {
   transform: rotateX(90deg);
   transition: 1.1s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation5 {
   transform: rotateX(0deg);
-  transition: .9s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.9s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
-
-
 
 .animation:hover .animation6 {
   transform: rotateX(90deg);
   transition: 1.2s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation6 {
   transform: rotateX(0deg);
-  transition: .8s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.8s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
-
-
 
 .animation:hover .animation7 {
   transform: rotateX(90deg);
   transition: 1.3s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation7 {
   transform: rotateX(0deg);
-  transition: .7s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.7s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:hover .animation8 {
   transform: rotateX(90deg);
   transition: 1.4s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation8 {
   transform: rotateX(0deg);
-  transition: .6s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.6s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:hover .animation9 {
   transform: rotateX(90deg);
   transition: 1.5s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
 
 .animation:not(:hover) .animation9 {
   transform: rotateX(0deg);
-  transition: .5s;
-  transition-timing-function: cubic-bezier(0.720, 0.005, 0.240, 1.000);
+  transition: 0.5s;
+  transition-timing-function: cubic-bezier(0.72, 0.005, 0.24, 1);
 }
-
-
-
-
 
 .animation_front {
   display: flex;
@@ -1315,7 +1212,6 @@ div.side:nth-child(6) {
   justify-content: center;
   transform: translateZ(100px);
 }
-
 
 /* animation ======================================================================================= */
 
@@ -1332,8 +1228,6 @@ div.side:nth-child(6) {
   padding: 20vh 0;
 }
 
-
-
 .meaningful_t {
   width: 63vw;
   display: flex;
@@ -1349,26 +1243,26 @@ div.side:nth-child(6) {
   font-family: "GrandSlang-Italic";
   transform: rotateX(90deg);
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.meaningful:hover .create{
+.meaningful:hover .create {
   transform: rotate(0deg);
   opacity: 1;
-  }
+}
 
 .somthing {
   font-size: 12vw;
   line-height: 0.7;
   transform: rotateX(90deg);
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.meaningful:hover .somthing{
+.meaningful:hover .somthing {
   transform: rotate(0deg);
   opacity: 1;
-  }
+}
 
 .meaningful_b {
   font-size: 10.5vw;
@@ -1376,13 +1270,13 @@ div.side:nth-child(6) {
   margin-bottom: 1.5vh;
   transform: rotateX(90deg);
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.meaningful:hover .meaningful_b{
+.meaningful:hover .meaningful_b {
   transform: rotate(0deg);
   opacity: 1;
-  }
+}
 
 .together {
   font-size: 3vw;
@@ -1390,13 +1284,13 @@ div.side:nth-child(6) {
   font-family: "SaintMonicaItalic";
   transform: rotateX(90deg);
   opacity: 0;
-  transition: .5s;
+  transition: 0.5s;
 }
 
-.meaningful:hover .together{
+.meaningful:hover .together {
   transform: rotate(0deg);
   opacity: 1;
-  }
+}
 
 /* meaningful------------------------------------------------------------------ */
 
@@ -1523,7 +1417,7 @@ div.side:nth-child(6) {
   margin-bottom: 2.5vh;
 }
 
-.contact_me>div {
+.contact_me > div {
   margin-left: 1vw;
 }
 
@@ -1569,31 +1463,18 @@ div.side:nth-child(6) {
 /* contact_field======================================================================================= */
 /* contact_field======================================================================================= */
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width:800px){
+@media (max-width: 800px) {
   body {
     display: none;
   }
-  html{
+  html {
     position: relative;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    
   }
-  
- html::after{
+
+  html::after {
     z-index: 999999;
     width: 100vw;
     height: 100vh;
@@ -1602,13 +1483,13 @@ div.side:nth-child(6) {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
   }
-  html::before{
+  html::before {
     z-index: 9999999;
     width: 100vw;
     height: 100vh;
-    content:"sorry, desktop and laptop only...";
+    content: "sorry, desktop and laptop only...";
     color: var(--main-color);
     position: absolute;
     font-size: 5vw;
@@ -1616,6 +1497,5 @@ div.side:nth-child(6) {
     text-transform: capitalize;
     text-align: center;
     line-height: 100vh;
-    
   }
 }
