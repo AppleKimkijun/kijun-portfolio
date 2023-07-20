@@ -1,5 +1,5 @@
 # 프론트엔드 포트폴리오 사이트
-<div style=text-align:center>
+<div align=center>
 
 ![HTML](https://img.shields.io/badge/HTML-5-E34F26?logo=HTML5&style=plastic)
 ![CSS](https://img.shields.io/badge/CSS-3-1572B6?logo=CSS3&style=plastic)
